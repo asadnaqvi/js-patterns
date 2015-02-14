@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <h1>Basic Module Pattern</h1>
+    <button onclick="basicModule.alertMe()">Alert from basic Module</button>
+</div>
+<div>
+    <h1>Async sub-Module Pattern across multiple files</h1>
+    <button onclick="asyncModule.file1.file1Alert()">Alert from async sub Module</button>
+</div>
+<div>
+    <h1>Async Module Pattern across multiple files</h1>
+    <button onclick="asyncModule.secondAlert()">Alert from async Module</button>
+</div>
+<div>
+    <h3>Note:</h3>
+    <p>I would prefer to use async module with sub-module patterns however , it depends on your application need</p>
+</div>
+<script src="basic-module-pattern.js"></script>
+<script src="async-module-pattern-file2.js"></script>
+<script src="async-module-pattern-file1.js"></script>
+<script src="async-sub-module-pattern-file1.js"></script>
+</body>
+</html>
